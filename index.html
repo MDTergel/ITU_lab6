@@ -8,12 +8,25 @@
       content="Free, easy-to-use PDF tools to merge, split, compress, convert, and edit your documents."
     />
     <title>iLovePDF — Online PDF tools for PDF lovers</title>
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="iLovePDF — Online PDF tools for PDF lovers" />
+    <meta
+      property="og:description"
+      content="Free, easy-to-use PDF tools to merge, split, compress, convert, and edit your documents."
+    />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="iLovePDF — Online PDF tools for PDF lovers" />
+    <meta
+      name="twitter:description"
+      content="Free, easy-to-use PDF tools to merge, split, compress, convert, and edit your documents."
+    />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#" aria-label="iLovePDF home">
+    <header class="site-header" id="top">
+      <a class="brand" href="#top" aria-label="iLovePDF home">
         <span class="brand-i">I</span>
         <svg class="brand-heart" viewBox="0 0 32 30" aria-hidden="true">
           <path
@@ -30,9 +43,9 @@
       </button>
 
       <nav class="main-nav" aria-label="Main navigation">
-        <a href="#tools">Merge PDF</a>
-        <a href="#tools">Split PDF</a>
-        <a href="#tools">Compress PDF</a>
+        <a href="#merge-pdf">Merge PDF</a>
+        <a href="#split-pdf">Split PDF</a>
+        <a href="#compress-pdf">Compress PDF</a>
         <button class="nav-dropdown" type="button" aria-expanded="false">
           Convert PDF <span class="chevron" aria-hidden="true"></span>
         </button>
@@ -93,7 +106,7 @@
 
       <section class="tools-section" id="tools" aria-label="PDF tools">
         <div class="tools-grid">
-          <a class="tool-card" href="#merge-pdf" alt="merge зураг" data-categories="organize workflows">
+          <a class="tool-card" id="merge-pdf" href="#merge-pdf" data-categories="organize workflows">
             <span class="tool-icon icon-coral" aria-hidden="true">
               <span class="icon-tile tile-back">↘</span><span class="icon-tile">↗</span>
             </span>
@@ -101,7 +114,7 @@
             <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
           </a>
 
-          <a class="tool-card" href="#split-pdf" alt="split зураг" data-categories="organize workflows">
+          <a class="tool-card" id="split-pdf" href="#split-pdf" data-categories="organize workflows">
             <span class="tool-icon icon-coral" aria-hidden="true">
               <span class="icon-tile tile-back">↙</span><span class="icon-tile">↘</span>
             </span>
@@ -109,7 +122,7 @@
             <p>Separate one page or a whole set for easy conversion into independent PDF files.</p>
           </a>
 
-          <a class="tool-card" href="#compress-pdf" data-categories="optimize workflows">
+          <a class="tool-card" id="compress-pdf" href="#compress-pdf" data-categories="optimize workflows">
             <span class="tool-icon icon-green" aria-hidden="true">
               <span class="icon-tile tile-back">↘</span><span class="icon-tile">↙</span>
               <span class="icon-tile">↗</span><span class="icon-tile">↖</span>
@@ -118,7 +131,7 @@
             <p>Reduce file size while optimizing for maximal PDF quality.</p>
           </a>
 
-          <a class="tool-card" href="#pdf-to-word" alt="pdf зураг" data-categories="convert">
+          <a class="tool-card" id="pdf-to-word" href="#pdf-to-word" data-categories="convert">
             <span class="tool-icon icon-blue" aria-hidden="true">
               <span class="icon-tile tile-back">↘</span><span class="icon-tile format-tile">W</span>
             </span>
@@ -126,7 +139,7 @@
             <p>Easily convert your PDF files into easy-to-edit DOC and DOCX documents.</p>
           </a>
 
-          <a class="tool-card" href="#pdf-to-powerpoint" alt="ppt зураг" data-categories="convert">
+          <a class="tool-card" id="pdf-to-powerpoint" href="#pdf-to-powerpoint" data-categories="convert">
             <span class="tool-icon icon-orange" aria-hidden="true">
               <span class="icon-tile tile-back">↘</span><span class="icon-tile format-tile">P</span>
             </span>
@@ -134,7 +147,7 @@
             <p>Turn your PDF files into easy-to-edit PPT and PPTX slideshows.</p>
           </a>
 
-          <a class="tool-card" href="#pdf-to-excel" alt="excel зураг" data-categories="convert">
+          <a class="tool-card" id="pdf-to-excel" href="#pdf-to-excel" data-categories="convert">
             <span class="tool-icon icon-green" aria-hidden="true">
               <span class="icon-tile tile-back">↘</span><span class="icon-tile format-tile">X</span>
             </span>
@@ -142,7 +155,7 @@
             <p>Pull data straight from PDFs into Excel spreadsheets in a few short seconds.</p>
           </a>
 
-          <a class="tool-card" href="#word-to-pdf" alt="word-pdf зураг" data-categories="convert">
+          <a class="tool-card" id="word-to-pdf" href="#word-to-pdf" data-categories="convert">
             <span class="tool-icon icon-blue" aria-hidden="true">
               <span class="icon-tile tile-back format-tile">W</span><span class="icon-tile">↘</span>
             </span>
@@ -150,7 +163,7 @@
             <p>Make DOC and DOCX files easy to read by converting them to PDF.</p>
           </a>
 
-          <a class="tool-card" href="#powerpoint-to-pdf" alt="ppt pdf зураг" data-categories="convert">
+          <a class="tool-card" id="powerpoint-to-pdf" href="#powerpoint-to-pdf" data-categories="convert">
             <span class="tool-icon icon-orange" aria-hidden="true">
               <span class="icon-tile tile-back format-tile">P</span><span class="icon-tile">↘</span>
             </span>
@@ -158,7 +171,7 @@
             <p>Make PPT and PPTX slideshows easy to view by converting them to PDF.</p>
           </a>
 
-          <a class="tool-card" href="#excel-to-pdf" alt="excel pdf зураг" data-categories="convert">
+          <a class="tool-card" id="excel-to-pdf" href="#excel-to-pdf" data-categories="convert">
             <span class="tool-icon icon-green" aria-hidden="true">
               <span class="icon-tile tile-back format-tile">X</span><span class="icon-tile">↘</span>
             </span>
@@ -166,7 +179,7 @@
             <p>Make EXCEL spreadsheets easy to read by converting them to PDF.</p>
           </a>
 
-          <a class="tool-card" href="#edit-pdf" alt="edit зураг" data-categories="edit workflows">
+          <a class="tool-card" id="edit-pdf" href="#edit-pdf" data-categories="edit workflows">
             <span class="tool-icon icon-purple" aria-hidden="true">
               <span class="edit-icon">T</span>
             </span>
@@ -174,7 +187,7 @@
             <p>Add text, images, shapes or freehand annotations to a PDF document.</p>
           </a> 
 
-          <a class="tool-card" href="#rotate-pdf" alt="зураг" data-categories="organize">
+          <a class="tool-card" id="rotate-pdf" href="#rotate-pdf" data-categories="organize">
             <span class="tool-icon icon-coral" aria-hidden="true">
               <span class="icon-tile tile-back">↻</span><span class="icon-tile">▤</span>
             </span>
@@ -182,7 +195,7 @@
             <p>Rotate your PDF pages exactly how you need them and save your file.</p>
           </a>
 
-          <a class="tool-card" href="#unlock-pdf" alt="unlock-pdf зураг" data-categories="security">
+          <a class="tool-card" id="unlock-pdf" href="#unlock-pdf" data-categories="security">
             <span class="tool-icon icon-blue" aria-hidden="true">
               <span class="icon-tile tile-back">⌑</span><span class="icon-tile">✓</span>
             </span>
@@ -190,7 +203,7 @@
             <p>Remove PDF password security, giving you the freedom to use your files.</p>
           </a>
 
-          <a class="tool-card" href="#protect-pdf" alt="protect-pdf зураг" data-categories="security">
+          <a class="tool-card" id="protect-pdf" href="#protect-pdf" data-categories="security">
             <span class="tool-icon icon-green" aria-hidden="true">
               <span class="icon-tile tile-back">▧</span><span class="icon-tile">✓</span>
             </span>
@@ -198,7 +211,7 @@
             <p>Protect PDF files with a password to keep sensitive information safe.</p>
           </a>
 
-          <a class="tool-card" href="#watermark-pdf" alt="watermark-pdf зураг" data-categories="edit">
+          <a class="tool-card" id="watermark-pdf" href="#watermark-pdf" data-categories="edit">
             <span class="tool-icon icon-purple" aria-hidden="true">
               <span class="edit-icon">W</span>
             </span>
@@ -206,7 +219,7 @@
             <p>Stamp an image or text over your PDF in seconds.</p>
           </a>
 
-          <a class="tool-card" href="#chat-with-pdf" alt="chat-with-pdf зураг" data-categories="intelligence">
+          <a class="tool-card" id="chat-with-pdf" href="#chat-with-pdf" data-categories="intelligence">
             <span class="tool-icon icon-blue" aria-hidden="true">
               <span class="edit-icon">AI</span>
             </span>
@@ -215,10 +228,70 @@
           </a>
         </div>
       </section>
+
+      <section class="guide-section" aria-labelledby="guide-title">
+        <h2 id="guide-title">Free online PDF tools for everyday document tasks</h2>
+        <p>
+          Choose a tool to organize pages, reduce file size, convert common office documents,
+          or add information to a PDF. Select a category above to narrow the list and open a
+          tool card to get started.
+        </p>
+        <div class="guide-grid">
+          <article>
+            <h3>Organize and optimize PDFs</h3>
+            <p>
+              Combine documents with <a href="#merge-pdf">Merge PDF</a>, separate pages with
+              <a href="#split-pdf">Split PDF</a>, or make a document smaller with
+              <a href="#compress-pdf">Compress PDF</a>.
+            </p>
+          </article>
+          <article>
+            <h3>Convert and edit documents</h3>
+            <p>
+              Convert between PDF and common office formats, or use
+              <a href="#edit-pdf">Edit PDF</a> and
+              <a href="#watermark-pdf">Watermark PDF</a> to add content to a document.
+            </p>
+          </article>
+          <article>
+            <h3>Protect and review files</h3>
+            <p>
+              Choose <a href="#protect-pdf">Protect PDF</a> to add password protection,
+              <a href="#unlock-pdf">Unlock PDF</a> to remove restrictions when permitted, or
+              <a href="#chat-with-pdf">Chat with PDF</a> to ask questions about a document.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="faq-section" aria-labelledby="faq-title">
+        <h2 id="faq-title">Frequently asked questions</h2>
+        <details>
+          <summary>Which PDF tool should I use first?</summary>
+          <p>
+            Choose the task you want to complete: merge or split pages, compress a file,
+            convert a document, edit its contents, or protect it with a password.
+          </p>
+        </details>
+        <details>
+          <summary>Can I convert PDF files to office formats?</summary>
+          <p>
+            Yes. Use PDF to Word, PDF to PowerPoint, or PDF to Excel to choose the format
+            that matches your document.
+          </p>
+        </details>
+        <details>
+          <summary>How can I work with only some pages of a PDF?</summary>
+          <p>
+            Use Split PDF to separate pages into individual files, or Merge PDF to combine
+            documents in the order you need.
+          </p>
+        </details>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <a class="brand footer-brand" href="#" aria-label="iLovePDF home">
+      <a class="brand footer-brand" href="#top" aria-label="iLovePDF home">
         <span class="brand-i">I</span>
         <svg class="brand-heart" viewBox="0 0 32 30" aria-hidden="true">
           <path
@@ -230,6 +303,7 @@
         <span class="brand-pdf">PDF</span>
       </a>
       <p>PDF tools made simple. Free and easy to use.</p>
+      <a href="#tools">Browse all PDF tools</a>
     </footer>
   </body>
 </html>
