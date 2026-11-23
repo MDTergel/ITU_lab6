@@ -25,6 +25,7 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header class="site-header" id="top">
       <a class="brand" href="#top" aria-label="iLovePDF home">
         <span class="brand-i">I</span>
@@ -53,15 +54,10 @@
       <div class="account-nav">
         <a class="login-link" href="#faq-title">PDF FAQ</a>
         <a class="signup-button" href="#tools">Browse tools</a>
-        <button class="apps-button" type="button" aria-label="Open apps menu">
-          <span></span><span></span><span></span>
-          <span></span><span></span><span></span>
-          <span></span><span></span><span></span>
-        </button>
       </div>
     </header>
 
-    <main>
+    <main id="main-content">
       <section class="hero" aria-labelledby="hero-title">
         <div class="hero-layout">
           <div class="hero-content">
@@ -75,6 +71,8 @@
             class="hero-illustration"
             src="assets/pdf-tools.svg"
             alt="Illustration of PDF document, merge, convert, edit, and security tools"
+            width="220"
+            height="180"
           />
         </div>
 
@@ -107,13 +105,14 @@
       </section>
 
       <section class="tools-section" id="tools" aria-label="PDF tools">
+        <h2 class="sr-only">Browse PDF tools</h2>
         <div class="tools-grid">
-          <a class="tool-card" id="merge-pdf" href="#merge-pdf" data-categories="organize workflows">
+          <a class="tool-card" id="merge-pdf" href="#merge-pdf" aria-label="View Merge PDF tool" data-categories="organize workflows">
             <span class="tool-icon icon-coral" aria-hidden="true">
               <span class="icon-tile tile-back">↘</span><span class="icon-tile">↗</span>
             </span>
             <h2>Merge PDF</h2>
-            <p>Combine PDFs in the order you want with the easiest PDF merger available.</p>
+            <p>Combine multiple PDF files into one document in your preferred page order.</p>
           </a>
 
           <a class="tool-card" id="split-pdf" href="#split-pdf" data-categories="organize workflows">
@@ -121,7 +120,7 @@
               <span class="icon-tile tile-back">↙</span><span class="icon-tile">↘</span>
             </span>
             <h2>Split PDF</h2>
-            <p>Separate one page or a whole set for easy conversion into independent PDF files.</p>
+            <p>Separate selected pages or divide a PDF into individual documents.</p>
           </a>
 
           <a class="tool-card" id="compress-pdf" href="#compress-pdf" data-categories="optimize workflows">
@@ -130,7 +129,7 @@
               <span class="icon-tile">↗</span><span class="icon-tile">↖</span>
             </span>
             <h2>Compress PDF</h2>
-            <p>Reduce file size while optimizing for maximal PDF quality.</p>
+            <p>Reduce PDF file size while preserving a practical level of document quality.</p>
           </a>
 
           <a class="tool-card" id="pdf-to-word" href="#pdf-to-word" data-categories="convert">
@@ -138,7 +137,7 @@
               <span class="icon-tile tile-back">↘</span><span class="icon-tile format-tile">W</span>
             </span>
             <h2>PDF to Word</h2>
-            <p>Easily convert your PDF files into easy-to-edit DOC and DOCX documents.</p>
+            <p>Convert PDF pages into editable Microsoft Word DOC or DOCX documents.</p>
           </a>
 
           <a class="tool-card" id="pdf-to-powerpoint" href="#pdf-to-powerpoint" data-categories="convert">
@@ -146,7 +145,7 @@
               <span class="icon-tile tile-back">↘</span><span class="icon-tile format-tile">P</span>
             </span>
             <h2>PDF to PowerPoint</h2>
-            <p>Turn your PDF files into easy-to-edit PPT and PPTX slideshows.</p>
+            <p>Convert PDF pages into editable Microsoft PowerPoint PPT or PPTX slides.</p>
           </a>
 
           <a class="tool-card" id="pdf-to-excel" href="#pdf-to-excel" data-categories="convert">
@@ -154,7 +153,7 @@
               <span class="icon-tile tile-back">↘</span><span class="icon-tile format-tile">X</span>
             </span>
             <h2>PDF to Excel</h2>
-            <p>Pull data straight from PDFs into Excel spreadsheets in a few short seconds.</p>
+            <p>Extract PDF table data into Microsoft Excel XLS or XLSX spreadsheets.</p>
           </a>
 
           <a class="tool-card" id="word-to-pdf" href="#word-to-pdf" data-categories="convert">
@@ -162,7 +161,7 @@
               <span class="icon-tile tile-back format-tile">W</span><span class="icon-tile">↘</span>
             </span>
             <h2>Word to PDF</h2>
-            <p>Make DOC and DOCX files easy to read by converting them to PDF.</p>
+            <p>Convert Word documents into a consistent PDF file for easy sharing.</p>
           </a>
 
           <a class="tool-card" id="powerpoint-to-pdf" href="#powerpoint-to-pdf" data-categories="convert">
@@ -170,7 +169,7 @@
               <span class="icon-tile tile-back format-tile">P</span><span class="icon-tile">↘</span>
             </span>
             <h2>PowerPoint to PDF</h2>
-            <p>Make PPT and PPTX slideshows easy to view by converting them to PDF.</p>
+            <p>Convert presentation slides into a PDF that is easy to open and share.</p>
           </a>
 
           <a class="tool-card" id="excel-to-pdf" href="#excel-to-pdf" data-categories="convert">
@@ -178,7 +177,7 @@
               <span class="icon-tile tile-back format-tile">X</span><span class="icon-tile">↘</span>
             </span>
             <h2>Excel to PDF</h2>
-            <p>Make EXCEL spreadsheets easy to read by converting them to PDF.</p>
+            <p>Convert Excel spreadsheets into a PDF with a consistent page layout.</p>
           </a>
 
           <a class="tool-card" id="edit-pdf" href="#edit-pdf" data-categories="edit workflows">
@@ -186,7 +185,7 @@
               <span class="edit-icon">T</span>
             </span>
             <h2>Edit PDF</h2>
-            <p>Add text, images, shapes or freehand annotations to a PDF document.</p>
+            <p>Add text, images, shapes, and handwritten annotations to a PDF.</p>
           </a> 
 
           <a class="tool-card" id="rotate-pdf" href="#rotate-pdf" data-categories="organize">
@@ -194,7 +193,7 @@
               <span class="icon-tile tile-back">↻</span><span class="icon-tile">▤</span>
             </span>
             <h2>Rotate PDF</h2>
-            <p>Rotate your PDF pages exactly how you need them and save your file.</p>
+            <p>Rotate individual pages or the entire PDF and download the updated file.</p>
           </a>
 
           <a class="tool-card" id="unlock-pdf" href="#unlock-pdf" data-categories="security">
@@ -202,7 +201,7 @@
               <span class="icon-tile tile-back">⌑</span><span class="icon-tile">✓</span>
             </span>
             <h2>Unlock PDF</h2>
-            <p>Remove PDF password security, giving you the freedom to use your files.</p>
+            <p>Remove known password restrictions from PDFs you are authorized to access.</p>
           </a>
 
           <a class="tool-card" id="protect-pdf" href="#protect-pdf" data-categories="security">
@@ -210,7 +209,7 @@
               <span class="icon-tile tile-back">▧</span><span class="icon-tile">✓</span>
             </span>
             <h2>Protect PDF</h2>
-            <p>Protect PDF files with a password to keep sensitive information safe.</p>
+            <p>Add password protection before sharing PDFs that contain sensitive information.</p>
           </a>
 
           <a class="tool-card" id="watermark-pdf" href="#watermark-pdf" data-categories="edit">
@@ -218,7 +217,7 @@
               <span class="edit-icon">W</span>
             </span>
             <h2>Watermark PDF</h2>
-            <p>Stamp an image or text over your PDF in seconds.</p>
+            <p>Add a text or image watermark to identify, label, or protect a document.</p>
           </a>
 
           <a class="tool-card" id="chat-with-pdf" href="#chat-with-pdf" data-categories="intelligence">
@@ -226,7 +225,7 @@
               <span class="edit-icon">AI</span>
             </span>
             <h2>Chat with PDF</h2>
-            <p>Ask questions and get insights from your PDF documents.</p>
+            <p>Ask focused questions and review key information found within a PDF.</p>
           </a>
         </div>
       </section>
@@ -310,7 +309,7 @@
         </svg>
         <span class="brand-pdf">PDF</span>
       </a>
-      <p>PDF tools made simple. Free and easy to use.</p>
+      <p>Simple, accessible PDF tools for everyday document tasks.</p>
       <div class="footer-links">
         <a href="#tools">Browse all PDF tools</a>
         <a href="https://github.com/MDTergel/ITU_lab6" target="_blank" rel="noopener noreferrer">

@@ -34,6 +34,40 @@ a {
   text-decoration: none;
 }
 
+a:focus-visible,
+button:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #5c83ce;
+  outline-offset: 3px;
+}
+
+.skip-link {
+  position: fixed;
+  top: 8px;
+  left: 8px;
+  z-index: 100;
+  transform: translateY(-140%);
+  padding: 10px 14px;
+  border-radius: 6px;
+  background: #292930;
+  color: #fff;
+  font-weight: 700;
+}
+
+.skip-link:focus {
+  transform: translateY(0);
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 button {
   font: inherit;
 }
@@ -455,6 +489,7 @@ button {
   min-height: 100px;
   align-items: center;
   justify-content: center;
+  flex-wrap: wrap;
   gap: 20px;
   padding: 20px;
   border-top: 1px solid #e6e6ec;
@@ -618,6 +653,20 @@ button {
   .hero p {
     margin-top: 10px;
     font-size: 17px;
+  }
+
+  .site-footer {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .site-footer p {
+    margin: 0;
+  }
+
+  .footer-links {
+    justify-content: center;
   }
 
   .tool-filters {
