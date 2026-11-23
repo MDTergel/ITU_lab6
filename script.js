@@ -26,20 +26,3 @@ menuToggle.addEventListener("click", () => {
   menuToggle.setAttribute("aria-label", isExpanded ? "Open menu" : "Close menu");
   mainNav.classList.toggle("is-open", !isExpanded);
 });
-
-mainNav.querySelectorAll("a").forEach((link) => {
-  link.addEventListener("click", () => {
-    menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.setAttribute("aria-label", "Open menu");
-    mainNav.classList.remove("is-open");
-  });
-});
-
-document.addEventListener("keydown", (event) => {
-  if (event.key === "Escape" && mainNav.classList.contains("is-open")) {
-    mainNav.classList.remove("is-open");
-    menuToggle.setAttribute("aria-expanded", "false");
-    menuToggle.setAttribute("aria-label", "Open menu");
-    menuToggle.focus();
-  }
-});
