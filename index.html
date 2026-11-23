@@ -5,21 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Free, easy-to-use PDF tools to merge, split, compress, convert, and edit your documents."
+      content="Browse free online PDF tools to merge, split, compress, convert, edit, protect, and review PDF documents."
     />
-    <title>iLovePDF — Online PDF tools for PDF lovers</title>
+    <title>Free Online PDF Tools | iLovePDF</title>
     <meta name="robots" content="index, follow" />
     <meta property="og:type" content="website" />
-    <meta property="og:title" content="iLovePDF — Online PDF tools for PDF lovers" />
+    <meta property="og:title" content="Free Online PDF Tools | iLovePDF" />
     <meta
       property="og:description"
-      content="Free, easy-to-use PDF tools to merge, split, compress, convert, and edit your documents."
+      content="Browse free online PDF tools to merge, split, compress, convert, edit, protect, and review PDF documents."
     />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="iLovePDF — Online PDF tools for PDF lovers" />
+    <meta name="twitter:title" content="Free Online PDF Tools | iLovePDF" />
     <meta
       name="twitter:description"
-      content="Free, easy-to-use PDF tools to merge, split, compress, convert, and edit your documents."
+      content="Browse free online PDF tools to merge, split, compress, convert, edit, protect, and review PDF documents."
     />
     <link rel="stylesheet" href="styles.css" />
     <script src="script.js" defer></script>
@@ -46,17 +46,13 @@
         <a href="#merge-pdf">Merge PDF</a>
         <a href="#split-pdf">Split PDF</a>
         <a href="#compress-pdf">Compress PDF</a>
-        <button class="nav-dropdown" type="button" aria-expanded="false">
-          Convert PDF <span class="chevron" aria-hidden="true"></span>
-        </button>
-        <button class="nav-dropdown" type="button" aria-expanded="false">
-          All PDF tools <span class="chevron" aria-hidden="true"></span>
-        </button>
+        <a href="#pdf-to-word">Convert PDF</a>
+        <a href="#tools">All PDF tools</a>
       </nav>
 
       <div class="account-nav">
-        <a class="login-link" href="#login">Login</a>
-        <a class="signup-button" href="#signup">Sign up</a>
+        <a class="login-link" href="#faq-title">PDF FAQ</a>
+        <a class="signup-button" href="#tools">Browse tools</a>
         <button class="apps-button" type="button" aria-label="Open apps menu">
           <span></span><span></span><span></span>
           <span></span><span></span><span></span>
@@ -67,13 +63,19 @@
 
     <main>
       <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-content">
-          <h1 id="hero-title">Every tool you need to work with PDFs in one place</h1>
-          <p>
-            Every tool you need to use PDFs, at your fingertips. All are 100% FREE and easy to
-            use! Merge, split, compress, convert, rotate, unlock and watermark PDFs with just a
-            few clicks.
-          </p>
+        <div class="hero-layout">
+          <div class="hero-content">
+            <h1 id="hero-title">Free online tools for every PDF task</h1>
+            <p>
+              Organize PDF pages, reduce file size, convert documents, edit content, protect
+              sensitive files, and ask questions about a PDF from one easy-to-use workspace.
+            </p>
+          </div>
+          <img
+            class="hero-illustration"
+            src="assets/pdf-tools.svg"
+            alt="Illustration of PDF document, merge, convert, edit, and security tools"
+          />
         </div>
 
         <div class="tool-filters" role="group" aria-label="Filter PDF tools">
@@ -287,6 +289,12 @@
             documents in the order you need.
           </p>
         </details>
+        <details>
+          <summary>Can I password-protect a PDF?</summary>
+          <p>
+            Yes. Use Protect PDF to add a password and keep sensitive PDF information secure.
+          </p>
+        </details>
       </section>
     </main>
 
@@ -303,7 +311,12 @@
         <span class="brand-pdf">PDF</span>
       </a>
       <p>PDF tools made simple. Free and easy to use.</p>
-      <a href="#tools">Browse all PDF tools</a>
+      <div class="footer-links">
+        <a href="#tools">Browse all PDF tools</a>
+        <a href="https://github.com/MDTergel/ITU_lab6" target="_blank" rel="noopener noreferrer">
+          View the GitHub repository
+        </a>
+      </div>
     </footer>
   </body>
 </html>
